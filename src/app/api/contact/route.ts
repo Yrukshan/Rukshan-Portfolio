@@ -1,4 +1,5 @@
-import { NextResponse } from 'next/server'
+import { NextResponse } from 'next/server';
+import nodemailer from 'nodemailer';
 
 interface ContactRequestBody {
   name: string;
@@ -8,22 +9,41 @@ interface ContactRequestBody {
 
 export async function POST(request: Request) {
   try {
-    await request.json() as ContactRequestBody
-    // Here you would typically:
-    // 1. Validate the input
-    // 2. Send an email using a service like SendGrid, AWS SES, etc.
-    // 3. Store the message in a database if needed
+    const { name, email, message } = (await request.json()) as ContactRequestBody;
 
-    // For now, we'll just simulate a successful response
-    return NextResponse.json(
-      { message: 'Message sent successfully' },
-      { status: 200 }
-    )
+    if (!name || !email || !message) {
+      return NextResponse.json({ message: 'All fields are required' }, { status: 400 });
+    }
+
+    // Create transporter using Gmail SMTP
+    const transporter = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+        user: process.env.SMTP_EMAIL,
+        pass: process.env.SMTP_PASSWORD,
+      },
+    });
+
+    // Email content
+    const mailOptions = {
+      from: process.env.SMTP_EMAIL,
+      to: process.env.TO_EMAIL,
+      subject: `New Contact Form Message from ${name}`,
+      text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
+      html: `
+        <h2>Portfoio New Contact Form Submission</h2>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Message:</strong><br/>${message}</p>
+      `,
+    };
+
+    // Send email
+    await transporter.sendMail(mailOptions);
+
+    return NextResponse.json({ message: 'Message sent successfully' }, { status: 200 });
   } catch (error: unknown) {
-    const errorMessage = error instanceof Error ? error.message : 'Failed to send message'
-    return NextResponse.json(
-      { message: errorMessage },
-      { status: 500 }
-    )
+    const errorMessage = error instanceof Error ? error.message : 'Failed to send message';
+    return NextResponse.json({ message: errorMessage }, { status: 500 });
   }
-} 
+}
