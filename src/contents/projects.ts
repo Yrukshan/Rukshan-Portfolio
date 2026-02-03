@@ -8,7 +8,7 @@ export const projects: Project[] = [
         description: 'An AI-powered medical voice assistant platform that enables real-time voice consultations with AI doctor agents, secure session management, and personalized medical dashboards with authentication and billing.',
         technologies: ['Next.js 16 (App Router)', 'TypeScript', 'Tailwind CSS', 'PostgreSQL (Neon)', 'Drizzle ORM', 'Clerk Authentication & Billing', 'Vapi AI', 'Assembly AI', 'OpenRouter AI', 'Vercel' ],
         githubLink: 'https://github.com/Yrukshan/Medical-AI-Voice-Agent',
-        demoLink: 'https://medical-ai-voice-agent.vercel.app/',
+        demoLink: 'https://demo.app/',
         image: '/projects/medicalAiVoiceAgent.png'
       },
       {
