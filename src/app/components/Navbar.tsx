@@ -57,7 +57,7 @@ export default function Navbar() {
 
             {/* Resume Button (LIGHT MODE FIXED) */}
             <motion.a
-              href="/Rukshan Ekanayake CV.pdf"
+              href="/Rukshan Ekanayake CV (1).pdf"
               download
               className="ml-4 px-5 py-2 rounded-lg font-medium 
                          bg-gradient-to-r from-primary to-primary-dark 
@@ -143,7 +143,7 @@ export default function Navbar() {
 
                   {/* Resume Button (LIGHT MODE FIXED) */}
                   <motion.a
-                    href="/Rukshan Ekanayake CV.pdf"
+                    href="/Rukshan Ekanayake CV (1).pdf"
                     download
                     onClick={() => setIsMobileMenuOpen(false)}
                     className="flex items-center py-2 px-4 rounded-lg font-medium 
