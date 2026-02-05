@@ -30,7 +30,7 @@ export default function Blogs() {
               variants={fadeInUp}
               {...cardHoverSmall}
             >
-              <Link href={`/blogs/${blog.slug}`}>
+              {/* <Link href={`/blogs/${blog.slug}`}> */}
                 <motion.h3 
                   className="text-xl font-semibold mb-2 hover:text-primary transition-colors"
                   whileHover={{ x: 5 }}
@@ -38,7 +38,7 @@ export default function Blogs() {
                 >
                   {blog.title}
                 </motion.h3>
-              </Link>
+              {/* </Link> */}
               <motion.p 
                 className="text-gray-600 dark:text-gray-300 mb-4"
                 initial={{ opacity: 0 }}
