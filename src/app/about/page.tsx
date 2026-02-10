@@ -93,10 +93,10 @@ export default function About() {
             <h3 className="text-xl font-semibold mb-2">Frontend</h3>
             <ul className="text-secondary space-y-2">
               <li>React / Next.js</li>
-              <li>React Native</li>
               <li>TypeScript</li>
               <li>Vite</li>
               <li>Tailwind CSS</li>
+              <li>React Native</li>
               <li>HTML / CSS / JavaScript</li>
             </ul>
           </motion.div>
@@ -109,10 +109,12 @@ export default function About() {
             <FaLaptopCode className="h-8 w-8 text-primary mb-4" />
             <h3 className="text-xl font-semibold mb-2">Backend</h3>
             <ul className="text-secondary space-y-2">
-              <li>Java Spring Boot</li>
+              <li>Spring Boot</li>
               <li>Node.js</li>
               <li>Express</li>
+              <li>.NET</li>
               <li>MERN Stack</li>
+              
             </ul>
           </motion.div>
 
@@ -128,8 +130,8 @@ export default function About() {
               {/* <li>Firebase</li> */}
               <li>SQL</li>
               <li>MySQL Workbench</li>
-              <li>Neon</li>
-              <li>Oracle</li>
+              <li>Neon / PostgreSQL</li>
+              {/* <li>Oracle</li> */}
             </ul>
           </motion.div>
 
@@ -141,11 +143,11 @@ export default function About() {
             <FaLanguage className="h-8 w-8 text-primary mb-4" />
             <h3 className="text-xl font-semibold mb-2">Other Languages</h3>
             <ul className="text-secondary space-y-2">
-              <li>Python</li>
-              <li>Kotlin</li>
-              <li>R</li>
+              {/* <li>Python</li> */}
               <li>Java</li>
+              <li>R</li>
               <li>PHP</li>
+              <li>Kotlin</li>
               <li>C++</li>
               <li>C</li>
             </ul>
