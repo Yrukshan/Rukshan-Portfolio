@@ -16,7 +16,7 @@ export default function Hero() {
             {...scaleIn}
             transition={{ delay: 0.2 }}
           >
-            <Image src="/profile8.png" alt="Profile" width={100} height={100} className="rounded-full mb-4 w-60 h-60 object-cover ring-2 ring-primary" />
+            <Image src="/profile8.png" alt="Profile" width={500} height={500} className="rounded-full mb-4 w-60 h-60 object-cover ring-2 ring-primary" />
           </motion.div>
           <motion.h1 
             className="text-4xl md:text-6xl font-bold mb-6"
