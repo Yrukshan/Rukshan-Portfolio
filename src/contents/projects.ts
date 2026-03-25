@@ -16,7 +16,7 @@ export const projects: Project[] = [
           'Vite',
           'RESTful APIs'
         ],
-        githubLink: 'https://github.com/DinilDulneth/kdseoffice-client', 
+        githubLink: 'https://github.com/DinilDulneth/KDSeOfficeAPI', 
         demoLink: 'https://kdseoffice-client-tl5p.vercel.app/', 
         image: '/projects/kdsEoffice.png' 
       },
