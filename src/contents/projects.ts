@@ -40,7 +40,7 @@ export const projects: Project[] = [
         title: 'BuildSafe - Mobile Based Infrastructure Risk Assessor For Contractors Working Under Disaster Resilience Programs ',
         description: 'BuildSafe is a mobile-first infrastructure assessment app that enables offline-capable structural audits, GPS-enabled assessment management, AI-powered risk scoring, compliance tracking, and actionable mitigation recommendations, helping contractors perform reliable, disaster-resilient inspections even under low-connectivity conditions.',
         technologies: ['Node.js', 'React Native', 'MongoDB','GPS Auto Location', 'Ollama API','OpenWeather API ','Gemini API', 'Expo'],
-        githubLink: 'https://github.com/Yrukshan/BuildSafe-',
+        githubLink: 'https://github.com/Yrukshan/BuildSafe-App',
         demoLink: 'https://drive.google.com/drive/folders/1s9iIFAew0ZpQQstv23g2i2uj6fZkfQdo?usp=sharing',
         image: '/projects/buildSafePoster.jpg',
       },
