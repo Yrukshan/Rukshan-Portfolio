@@ -4,6 +4,23 @@ import { Project } from "@/types";
 export const projects: Project[] = [
 
       {
+        title: 'KDS e-Office Service - Divisional Secretariat Karuwalagaswewa',
+        description: 'A scalable digital task management and citizen service platform developed for the Karuwalagaswewa Divisional Secretariat to digitize administrative workflows, manage tasks, letters, and visitor services with secure role-based access control.',
+        technologies: [
+          'ASP.NET Core (.NET 10)',
+          'SQL Server',
+          'Repository Pattern',
+          'Swagger (OpenAPI)',
+          'React',
+          'TypeScript',
+          'Vite',
+          'RESTful APIs'
+        ],
+        githubLink: 'https://github.com/DinilDulneth/kdseoffice-client', 
+        demoLink: 'https://kdseoffice-client-tl5p.vercel.app/', 
+        image: '/projects/kdsEoffice.png' 
+      },
+      {
         title: 'Medical AI Voice Agent',
         description: 'An AI-powered medical voice assistant platform that enables real-time voice consultations with AI doctor agents, secure session management, and personalized medical dashboards with authentication and billing.',
         technologies: ['Next.js 16 (App Router)', 'TypeScript', 'Tailwind CSS', 'PostgreSQL (Neon)', 'Drizzle ORM', 'Clerk Authentication & Billing', 'Vapi AI', 'Assembly AI', 'OpenRouter AI', 'Vercel' ],
