@@ -32,7 +32,7 @@ export const projects: Project[] = [
         title: 'FinTracker AI - Smart Expense Tracker with AI Insights',
         description: 'A modern AI-powered expense tracking web application with intelligent categorization, real-time analytics, and personalized financial insights.',
         technologies: ['Next.js', 'React', 'TypeScript','Tailwind CSS','Prisma','PostgreSQL (Neon)','Chart.js','OpenRouter AI','Clerk Auth','Vercel'],
-        githubLink: 'https://github.com/Yrukshan/next-Fin-Track-AI-Finance-Tracker-',
+        githubLink: 'https://github.com/Yrukshan/next-fin-track-ai',
         demoLink: 'https://next-fin-track-ai.vercel.app/',
         image: '/projects/FinTrackerAIImg.png',
       },
