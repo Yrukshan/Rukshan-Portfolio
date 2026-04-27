@@ -21,6 +21,52 @@ export const projects: Project[] = [
         image: '/projects/kdsEoffice.png' 
       },
       {
+        title: 'CareLink - AI-Enabled Smart Healthcare & Telemedicine Platform',
+        description: 'A full-stack microservices-based healthcare platform enabling smart appointment scheduling, telemedicine consultations, AI symptom analysis, healthcare chatbot support, secure payments, and role-based medical management through scalable distributed architecture.',
+        technologies: [
+          '.NET 9',
+          'ASP.NET Core Microservices',
+          'React.js',
+          'Vite',
+          'JavaScript',
+          'Python',
+          'PostgreSQL',
+          'MongoDB',
+          'Entity Framework Core',
+          'JWT Authentication',
+          'Stripe',
+          'Agora',
+          'Docker',
+          'Kubernetes',
+          'Swagger/OpenAPI',
+          'Render',
+          'Vercel',
+          'GitHub'
+        ],
+        githubLink: 'https://github.com/CareLink-system/careLinkPlatform',
+        demoLink: 'https://care-link-platform.vercel.app/',
+        image: '/projects/careLink.png'
+      },
+      {
+        title: 'InvestHub - Startup, Mentor & Investor Collaboration Platform',
+        description: 'A full-stack web platform connecting startups with mentors and investors, enabling idea validation, networking, funding opportunities, and startup growth through a scalable collaboration ecosystem.',
+        technologies: [
+          'React.js',
+          'Vite',
+          'Node.js',
+          'Express.js',
+          'JavaScript',
+          'MongoDB',
+          'JWT Authentication',
+          'REST APIs',
+          'GitHub',
+          'Responsive UI'
+        ],
+        githubLink: 'https://github.com/investhub-platform/investhub',
+        demoLink: 'https://www.investhub.me/',
+        image: '/projects/investHub.png'
+      },
+      {
         title: 'Medical AI Voice Agent',
         description: 'An AI-powered medical voice assistant platform that enables real-time voice consultations with AI doctor agents, secure session management, and personalized medical dashboards with authentication and billing.',
         technologies: ['Next.js 16 (App Router)', 'TypeScript', 'Tailwind CSS', 'PostgreSQL (Neon)', 'Drizzle ORM', 'Clerk Authentication & Billing', 'Vapi AI', 'Assembly AI', 'OpenRouter AI', 'Vercel' ],
